@@ -1,4 +1,4 @@
-print("Welcome to CT8!")
+print("Welcome to CT8")
 print("Great job correctly setting up this codespace")
 print("We will be using this site for the majority of the projects for this class")
 print("Make sure you bookmark this page using the STAR icon in the top right corner of your browser")
@@ -27,4 +27,6 @@ print("\n\n")
                                                                                           
                                   
 print("Now it's your turn:")
-print("Find this line (line 30) in the welcome_to_ct8.py file, then change the message to say a fact about you.")                                  
+print("I lived in LA my whole life") 
+print("I lived in a Kraken player's house over the summer")            
+print("Robert Downey Jr was my nextdoor neighbor")                     
