@@ -1,7 +1,7 @@
 import random
 
 # Pick a word at random
-word_list = ["adieu","races","sarah","islae","ellie","cloud","sunny","heart","rugby","times","rhyme","green","angle","names","guess","shops","beats","audio","apple","birds","grape","notes","crate","hello","flake","snowy"]
+word_list = ["adieu","races","sarah","ellie","cloud","sunny","heart","rugby","times","rhyme","green","angle","names","guess","shops","beats","audio","apple","birds","grape","notes","crate","hello","flake","snowy"]
 hidden_word = random.choice(word_list)
 
 print("WORDLE:")
@@ -61,6 +61,8 @@ for i in range(6):
     if output == "🟩🟩🟩🟩🟩":
         print("You win!")
         break
+if output != "🟩🟩🟩🟩🟩":
+    print("You lost!")
+    print(f"The wordle answer was {hidden_word}!")
 
 print(f"Your guess count was {i+1}")
-print(f"The wordle answer was {hidden_word}!")
