@@ -10,16 +10,13 @@ set_background("alpine1.gif")
 goat = create_sprite("goat.gif",x4,y4)
 
 
-# the goal of the game is to keep the fast goat alive. He can only do well a certain way without getting diabeties.
+# the goal of the game is to keep the fast goat alive and happy without giving him too much food. He can only do well a certain way without getting diabeties.
 
 age = 0
 happiness = 50
 cookies = 0
 milks = 0
 grown = False
-
-if happiness >= 80:
-    set_image(goat,"goatbig.gif")
 
 # Section 2 - controls
 # makes cookies appear on the screen to make the goat become fed
@@ -72,9 +69,6 @@ for i in range(1000000000):
     if i % 50 == 0:
         x2 = random.randint(-200, 200)
         goat.goto(x2,y4)
-    
-    
-
 
     time.sleep(0.01)
     if i % 200 == 0:
@@ -90,5 +84,6 @@ for i in range(1000000000):
     if happiness == 0:
         break
     if cookies >= 500:
+        print("Game over!")
         break
-print("Game over!")
+    
